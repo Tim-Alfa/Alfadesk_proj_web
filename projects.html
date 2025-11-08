@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekt ALFADESK – Harmonogram</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>.wk{margin-top:.4rem;text-align:left}</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html#home">
+        <img src="images/logo.png" alt="ALFASYSTEMS logo">
+        <h1>ALFASYSTEMS <span style="opacity:.85;font-weight:500">— ALFADESK Fix IT</span></h1>
+      </a>
+      <nav class="nav">
+        <a href="projects.html">Projekty</a>
+        <a href="team.html">Tím</a>
+        <a href="about.html">O nás</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="motivacny-list.html">Motivačný list</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-logo">
+        <img src="images/logo.png" alt="ALFASYSTEMS logo">
+      </div>
+      <div class="banner-copy">
+        <h2>ALFADESK Helpdesk</h2>
+        <p class="lead">Hlavný projekt tímu ALFASYSTEMS. Nižšie je priebežný harmonogram podľa týždňov.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>ALFADESK – harmonogram (12. okt → 20. dec)</h2>
+    <div class="timeline" style="overflow:auto">
+      <ul style="grid-template-columns:repeat(5, minmax(220px,1fr))">
+        <li>
+          <strong>12. Oct – 18. Oct</strong>
+          <div class="wk">
+            <div><strong>Peter:</strong> Kick‑off meeting, predstavenie vízie a základná architektúra.</div>
+            <div><strong>Gabriel:</strong> Návrh DB schémy (entitno‑vzťahový model) a pripojenie k backendu.</div>
+            <div><strong>Roman:</strong> Nastavenie repozitára a CI, kostra webu a testovacie scenáre.</div>
+            <div><strong>Anton:</strong> Príprava hostingu, domény a Docker prostredia.</div>
+            <div><strong>Boris:</strong> Wireframy helpdesku a UI komponenty pre dashboard.</div>
+          </div>
+        </li>
+        <li>
+          <strong>19. Oct – 25. Oct</strong>
+          <div class="wk">
+            <div><strong>Peter:</strong> Definícia dátových tokov medzi modulmi, návrh MQTT štruktúr.</div>
+            <div><strong>Gabriel:</strong> Vytvorenie základnej databázy v MySQL a testovanie spojenia s API.</div>
+            <div><strong>Roman:</strong> Implementácia základných endpointov API a testovacia verzia UI.</div>
+            <div><strong>Anton:</strong> Nastavenie Docker Compose a správa kontajnerov backend/frontend.</div>
+            <div><strong>Boris:</strong> Úvodný dizajn dashboardu v Figma, farebná paleta a typografia.</div>
+          </div>
+        </li>
+        <li>
+          <strong>26. Oct – 1. Nov</strong>
+          <div class="wk">
+            <div><strong>Peter:</strong> Implementácia MQTT komunikácie a logiky spracovania udalostí.</div>
+            <div><strong>Gabriel:</strong> Optimalizácia databázy, doplnenie indexov a validácie dát.</div>
+            <div><strong>Roman:</strong> Rozšírenie testov, validácia API a prvý deploy na interný server.</div>
+            <div><strong>Anton:</strong> Automatizácia build procesu, CI/CD pipeline.</div>
+            <div><strong>Boris:</strong> Responzívny layout pre mobilné zariadenia a testovanie UI.</div>
+          </div>
+        </li>
+        <li>
+          <strong>2. Nov – 8. Nov</strong>
+          <div class="wk">
+            <div><strong>Peter:</strong> Integrácia modulov IoT a webového backendu.</div>
+            <div><strong>Gabriel:</strong> Ladenie dátových modelov, doplnenie relácií.</div>
+            <div><strong>Roman:</strong> Prvá verzia dashboardu so základnými funkciami.</div>
+            <div><strong>Anton:</strong> Monitorovanie servera a logov, správa domény.</div>
+            <div><strong>Boris:</strong> Zlepšenie UX toku pre riešenie ticketov.</div>
+          </div>
+        </li>
+        <li>
+          <strong>9. Nov – 15. Nov</strong>
+          <div class="wk">
+            <div><strong>Peter:</strong> Analýza výkonu a úprava architektúry pre stabilitu.</div>
+            <div><strong>Gabriel:</strong> Testovanie integrácie s API a refaktor DB vrstvy.</div>
+            <div><strong>Roman:</strong> Rozšírenie testov a oprava chýb z prvej revízie.</div>
+            <div><strong>Anton:</strong> Zálohovanie systému a nastavenie alertov.</div>
+            <div><strong>Boris:</strong> Doplnenie vizuálnych prvkov pre správu úloh.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p style="color:#6b7a99;margin-top:.75rem">Pozn.: ďalšie týždne budú doplnené priebežne po kontrole pokroku.</p>
+  </section>
+
+  <section class="container">
+    <h2>Zápisnica z 1. stretnutia (12. október 2025)</h2>
+    <div class="card" style="padding:1rem">
+      <p><strong>Téma:</strong> Úvodné stretnutie k projektu ALFADESK</p>
+      <p><strong>Účastníci:</strong> Peter, Gabriel, Roman, Anton, Boris</p>
+      <p><strong>Obsah:</strong></p>
+      <ul>
+        <li>Predstavenie vízie projektu a cieľov (Peter)</li>
+        <li>Návrh architektúry a rozdelenie kompetencií</li>
+        <li>Definovanie prvých úloh a komunikačných kanálov</li>
+      </ul>
+      <p><strong>Rozdelenie úloh:</strong></p>
+      <ul>
+        <li>Peter – koordinácia projektu, backend, IoT integrácie</li>
+        <li>Gabriel – databázy, dátové modely</li>
+        <li>Roman – testovanie, správa webu</li>
+        <li>Anton – hosting, CI/CD, infraštruktúra</li>
+        <li>Boris – UI/UX, dizajn a konzistencia</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Projektová dokumentácia (PDF)</h2>
+    <div class="card" style="padding:1rem">
+      <object data="docs/projekt.pdf" type="application/pdf" style="width:100%;height:70vh;border:1px solid #d6def7;border-radius:12px;background:#fff">
+        <iframe src="docs/projekt.pdf" style="width:100%;height:70vh;border:0"></iframe>
+      </object>
+      <p style="color:#5b6c8f;margin-top:.5rem">Ak sa PDF nezobrazí, skontroluj, že súbor je uložený na ceste <code>docs/projekt.pdf</code>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div>
+  </footer>
+</body>
+</html>

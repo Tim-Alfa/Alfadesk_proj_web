@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O nás – ALFASYSTEMS</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html#home">
+        <img src="images/logo.png" alt="ALFASYSTEMS logo">
+        <h1>ALFASYSTEMS <span style="opacity:.85;font-weight:500">— ALFADESK Fix IT</span></h1>
+      </a>
+      <nav class="nav">
+        <a href="projects.html">Projekty</a>
+        <a href="team.html">Tím</a>
+        <a href="about.html">O nás</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="motivacny-list.html">Motivačný list</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-logo">
+        <img src="images/logo.png" alt="ALFASYSTEMS logo">
+      </div>
+      <div class="banner-copy">
+        <h2>O nás</h2>
+        <p class="lead">ALFASYSTEMS je slovenský IT tím špecializovaný na vývoj helpdesk riešení, správu serverov a IoT integrácie.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="cards">
+      <div class="card">
+        <h3>Čo robíme</h3>
+        <p>Vývoj helpdesk systémov, monitoring, správa IT infraštruktúry a automatizácia procesov.</p>
+      </div>
+      <div class="card">
+        <h3>Hodnoty</h3>
+        <p>Transparentnosť, jednoduchosť, bezpečnosť a merateľné výsledky.</p>
+      </div>
+      <div class="card">
+        <h3>Technológie</h3>
+        <p>PHP, C/C++, JavaScript, Docker, MQTT, Home Assistant, MySQL/PostgreSQL.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cards">
+      <div class="card">
+        <h3>Kontaktné údaje</h3>
+        <p>Email: <a href="mailto:info@alfasystems.sk">info@alfasystems.sk</a><br>
+        Web: <a href="https://www.alfasystems.sk">www.alfasystems.sk</a></p>
+      </div>
+      <div class="card">
+        <h3>Rýchly dopyt</h3>
+        <form onsubmit="event.preventDefault(); alert('Ďakujeme! Ozveme sa.');">
+          <label>Meno<br><input required style="width:100%;padding:.6rem;border:1px solid #d6def7;border-radius:10px"></label><br><br>
+          <label>Email<br><input type="email" required style="width:100%;padding:.6rem;border:1px solid #d6def7;border-radius:10px"></label><br><br>
+          <label>Správa<br><textarea rows="5" style="width:100%;padding:.6rem;border:1px solid #d6def7;border-radius:10px"></textarea></label><br><br>
+          <button style="background:var(--blue-800);color:#fff;border:0;border-radius:12px;padding:.7rem 1rem;font-weight:700;cursor:pointer">Odoslať</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div>
+  </footer>
+</body>
+</html>

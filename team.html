@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tím – ALFASYSTEMS</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    /* Force 5 columns on large screens */
+    @media (min-width: 1100px){
+      .team.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html#home">
+        <img src="images/logo.png" alt="ALFASYSTEMS logo">
+        <h1>ALFASYSTEMS <span style="opacity:.85;font-weight:500">— ALFADESK Fix IT</span></h1>
+      </a>
+      <nav class="nav">
+        <a href="projects.html">Projekty</a>
+        <a href="team.html">Tím</a>
+        <a href="about.html">O nás</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="motivacny-list.html">Motivačný list</a>
+      </nav>
+    </div>
+  </div>
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-logo">
+        <img src="images/logo.png" alt="ALFASYSTEMS logo">
+      </div>
+      <div class="banner-copy">
+        <h2>Náš tím</h2>
+        <p class="lead">Kto sme a čo robíme. Kontaktné osoby pre jednotlivé oblasti.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="main container">
+    <div class="team grid-5">
+      <div class="member">
+        <img src="images/peter.jpg" alt="Peter">
+        <h3>Peter</h3>
+        <div class="role">Líder tímu · IoT technológie · Backend</div>
+        <p>Ako líder tímu zodpovedám za technickú koordináciu, architektúru systému a prepojenie modulov do funkčného celku. Priorita: stabilný backend, spoľahlivá IoT komunikácia a čisté API.</p>
+        <ul>
+          <li><strong>Zodpovednosti:</strong> architektúra backendu, IoT integrácie, analytika, stabilita a testovanie</li>
+          <li><strong>Tech stack:</strong> C/C++, Python, SQL, MQTT, Docker, Linux, ESP32, Arduino</li>
+          <li><strong>Silné stránky:</strong> systematickosť, spoľahlivosť, detail, technické vedenie</li>
+          <li><strong>Fun fact:</strong> Som z minulého tisícročia — dnes sa vo weboch a IoT hýbem s energiou mladíka.</li>
+        </ul>
+      </div>
+      <div class="member">
+        <img src="images/gabriel.jpg" alt="Gabriel">
+        <h3>Gabriel</h3>
+        <div class="role">Databázy · Support Backend</div>
+        <p>Študujem na UCM v Trnave a venujem sa návrhu databáz, práci s dátami a spolupráci s backend vývojom pri integrácii DB do aplikácie.</p>
+        <ul>
+          <li><strong>Zodpovednosti:</strong> návrh a implementácia DB, správa a údržba dát, podpora backendu</li>
+          <li><strong>Tech stack:</strong> MySQL, PostgreSQL, SQL, PHP, Node.js, Git</li>
+          <li><strong>Silné stránky:</strong> analytické myslenie, zodpovednosť, ochota učiť sa</li>
+        </ul>
+      </div>
+      <div class="member">
+        <img src="images/roman.jpg" alt="Roman Kasl">
+        <h3>Roman Kasl</h3>
+        <div class="role">Tester aplikácie · Správca webu</div>
+        <p>Starám sa o testovanie funkcionality a správu webovej stránky projektu vrátane aktualizácií a optimalizácie. Pracujem ako IT tester – prinášam reálne skúsenosti z praxe.</p>
+        <ul>
+          <li><strong>Zodpovednosti:</strong> testovanie, dokumentácia chýb, správa a aktualizácia webu</li>
+          <li><strong>Tech stack:</strong> HTML, CSS, JavaScript, WordPress/CMS, Git</li>
+          <li><strong>Silné stránky:</strong> analytické myslenie, zodpovednosť, prax z testovania</li>
+        </ul>
+      </div>
+      <div class="member">
+        <img src="images/jondoe.jpg" alt="Anton">
+        <h3>Anton</h3>
+        <div class="role">Backend aplikácie · Webhosting</div>
+        <p>Zameriavam sa na spoľahlivý backend, správu infraštruktúry a nasadzovanie. Tvorím a udržiavam API, dohliadam na bezpečnosť a výkon a starám sa o hosting.</p>
+        <ul>
+          <li><strong>Zodpovednosti:</strong> backend služby, CI/CD, monitoring, správa serverov a domén</li>
+          <li><strong>Tech stack:</strong> PHP, Node.js, Python, Nginx, Docker, GitLab CI, MySQL/PostgreSQL, Linux</li>
+          <li><strong>Silné stránky:</strong> spoľahlivosť, automatizácia, orientácia na výkon a bezpečnosť</li>
+        </ul>
+      </div>
+      <div class="member">
+        <img src="images/boris.jpg" alt="Boris Vojtík">
+        <h3>Boris Vojtík</h3>
+        <div class="role">UX/UI dizajn</div>
+        <p>Pomáham tímu premeniť funkcionalitu na prehľadné, estetické a používateľsky prívetivé rozhrania. Od výskumu cez wireframy až po finálny dizajn.</p>
+        <ul>
+          <li><strong>Zodpovednosti:</strong> UX výskum, návrh UI, wireframy a prototypy, testovanie použiteľnosti</li>
+          <li><strong>Tech stack:</strong> HTML, CSS, PHP, SQL, Figma, Canva, Adobe XD</li>
+          <li><strong>Silné stránky:</strong> čistý kód, zmysel pre detail, spoľahlivosť, termíny</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <section class="container" style="text-align:center">
+    <figure style="margin:0 auto;max-width:900px">
+      <img src="images/spolocna.jpg" alt="Spoločná fotografia tímu ALFASYSTEMS – ALFADESK" style="width:100%;height:auto;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.10)">
+      <figcaption style="color:#5b6c8f;margin-top:.5rem">Projektový tím ALFASYSTEMS – ALFADESK, október 2025</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    <div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div>
+  </footer>
+</body>
+</html>
