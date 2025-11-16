@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>O nás – ALFASYSTEMS</title>
+  <title>Kontakt – ALFASYSTEMS</title>
   <link rel="stylesheet" href="style/style.css">
+  
 </head>
 <body>
+
   <div class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="index.html#home">
@@ -17,7 +19,7 @@
         <a href="projects.html">Projekty</a>
         <a href="team.html">Tím</a>
         <a href="about.html">O nás</a>
-        <a href="contact.html">Kontakt</a>
+        <a href="contact.php">Kontakt</a>
         <a href="motivacny-list.html">Motivačný list</a>
       </nav>
     </div>
@@ -29,50 +31,59 @@
         <img src="images/logo.png" alt="ALFASYSTEMS logo">
       </div>
       <div class="banner-copy">
-        <h2>O nás</h2>
-        <p class="lead">ALFASYSTEMS je slovenský IT tím špecializovaný na vývoj helpdesk riešení, správu serverov a IoT integrácie.</p>
+        <h2>Kontakt</h2>
+        <p class="lead">Napíšte nám – odpovieme do 24 hodín.</p>
       </div>
     </div>
   </header>
 
-  <section class="container">
-    <div class="cards">
-      <div class="card">
-        <h3>Čo robíme</h3>
-        <p>Vývoj helpdesk systémov, monitoring, správa IT infraštruktúry a automatizácia procesov.</p>
-      </div>
-      <div class="card">
-        <h3>Hodnoty</h3>
-        <p>Transparentnosť, jednoduchosť, bezpečnosť a merateľné výsledky.</p>
-      </div>
-      <div class="card">
-        <h3>Technológie</h3>
-        <p>PHP, C/C++, JavaScript, Docker, MQTT, Home Assistant, MySQL/PostgreSQL.</p>
-      </div>
-    </div>
-  </section>
+  <main class="main container">
 
-  <section class="container">
+    <!-- SPRÁVA PO ÚSPEŠNOM ODOSLANÍ -->
+    <?php if (isset($_GET['success'])): ?>
+      <div class="alert-success">
+        ✔ Vaša správa bola úspešne odoslaná. Ďakujeme!
+      </div>
+    <?php endif; ?>
+
     <div class="cards">
       <div class="card">
         <h3>Kontaktné údaje</h3>
-        <p>Email: <a href="mailto:info@alfasystems.sk">info@alfasystems.sk</a><br>
+        <p>Email: <a href="mailto:peter.fidler2@ucm.sk">peter.fidler2@ucm.sk</a><br>
         Web: <a href="https://www.alfasystems.sk">www.alfasystems.sk</a></p>
       </div>
+
       <div class="card">
         <h3>Rýchly dopyt</h3>
-        <form onsubmit="event.preventDefault(); alert('Ďakujeme! Ozveme sa.');">
-          <label>Meno<br><input required class="form-control"></label><br><br>
-          <label>Email<br><input type="email" required class="form-control"></label><br><br>
-          <label>Správa<br><textarea rows="5" class="form-control"></textarea></label><br><br>
+
+        <!-- FORMULÁR S ODOSIELANÍM -->
+        <form action="send.php" method="POST"
+
+          <label>Meno<br>
+            <input required class="form-control" name="name">
+          </label><br><br>
+
+          <label>Email<br>
+            <input type="email" required class="form-control" name="email">
+          </label><br><br>
+
+          <label>Predmet<br>
+            <input required class="form-control" name="subject">
+          </label><br><br>
+
+          <label>Správa<br>
+            <textarea rows="5" required class="form-control" name="message"></textarea>
+          </label><br><br>
+
           <button class="btn-primary">Odoslať</button>
         </form>
       </div>
     </div>
-  </section>
+  </main>
 
   <footer>
     <div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div>
   </footer>
+
 </body>
 </html>

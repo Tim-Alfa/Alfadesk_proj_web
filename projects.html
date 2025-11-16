@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projekt ALFADESK – Harmonogram</title>
   <link rel="stylesheet" href="style/style.css">
-  <style>.wk{margin-top:.4rem;text-align:left}</style>
 </head>
 <body>
+
   <div class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="index.html#home">
         <img src="images/logo.png" alt="ALFASYSTEMS logo">
-        <h1>ALFASYSTEMS <span style="opacity:.85;font-weight:500">— ALFADESK Fix IT</span></h1>
+        <h1>ALFASYSTEMS <span class="brand-subtitle">— ALFADESK Fix IT</span></h1>
       </a>
       <nav class="nav">
+        <a href="motivacny-list.html">Motivačný list</a>
         <a href="projects.html">Projekty</a>
         <a href="team.html">Tím</a>
         <a href="about.html">O nás</a>
         <a href="contact.html">Kontakt</a>
-        <a href="motivacny-list.html">Motivačný list</a>
       </nav>
     </div>
   </div>
@@ -30,7 +30,7 @@
         <img src="images/logo.png" alt="ALFASYSTEMS logo">
       </div>
       <div class="banner-copy">
-        <h2>ALFADESK Helpdesk</h2>
+        <h2>ALFADESK Helpdesk – Harmonogram</h2>
         <p class="lead">Hlavný projekt tímu ALFASYSTEMS. Nižšie je priebežný harmonogram podľa týždňov.</p>
       </div>
     </div>
@@ -38,97 +38,213 @@
 
   <section class="container">
     <h2>ALFADESK – harmonogram (12. okt → 20. dec)</h2>
-    <div class="timeline" style="overflow:auto">
+<div class="milestones">
+  <div class="milestone">
+    <div class="dot"></div>
+    <p>Kickoff & Role</p>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="milestone">
+    <div class="dot"></div>
+    <p>Návrh systému</p>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="milestone">
+    <div class="dot"></div>
+    <p>DB & API</p>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="milestone">
+    <div class="dot"></div>
+    <p>UI/UX & Testy</p>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="milestone">
+    <div class="dot"></div>
+    <p>Final Demo</p>
+  </div>
+</div>
+
+
+    <div class="timeline timeline-scroll">
       <ul style="grid-template-columns:repeat(5, minmax(220px,1fr))">
-        <li>
-          <strong>12. Oct – 18. Oct</strong>
-          <div class="wk">
-            <div><strong>Peter:</strong> Kick‑off meeting, predstavenie vízie a základná architektúra.</div>
-            <div><strong>Gabriel:</strong> Návrh DB schémy (entitno‑vzťahový model) a pripojenie k backendu.</div>
-            <div><strong>Roman:</strong> Nastavenie repozitára a CI, kostra webu a testovacie scenáre.</div>
-            <div><strong>Anton:</strong> Príprava hostingu, domény a Docker prostredia.</div>
-            <div><strong>Boris:</strong> Wireframy helpdesku a UI komponenty pre dashboard.</div>
-          </div>
-        </li>
-        <li>
-          <strong>19. Oct – 25. Oct</strong>
-          <div class="wk">
-            <div><strong>Peter:</strong> Definícia dátových tokov medzi modulmi, návrh MQTT štruktúr.</div>
-            <div><strong>Gabriel:</strong> Vytvorenie základnej databázy v MySQL a testovanie spojenia s API.</div>
-            <div><strong>Roman:</strong> Implementácia základných endpointov API a testovacia verzia UI.</div>
-            <div><strong>Anton:</strong> Nastavenie Docker Compose a správa kontajnerov backend/frontend.</div>
-            <div><strong>Boris:</strong> Úvodný dizajn dashboardu v Figma, farebná paleta a typografia.</div>
-          </div>
-        </li>
-        <li>
-          <strong>26. Oct – 1. Nov</strong>
-          <div class="wk">
-            <div><strong>Peter:</strong> Implementácia MQTT komunikácie a logiky spracovania udalostí.</div>
-            <div><strong>Gabriel:</strong> Optimalizácia databázy, doplnenie indexov a validácie dát.</div>
-            <div><strong>Roman:</strong> Rozšírenie testov, validácia API a prvý deploy na interný server.</div>
-            <div><strong>Anton:</strong> Automatizácia build procesu, CI/CD pipeline.</div>
-            <div><strong>Boris:</strong> Responzívny layout pre mobilné zariadenia a testovanie UI.</div>
-          </div>
-        </li>
-        <li>
-          <strong>2. Nov – 8. Nov</strong>
-          <div class="wk">
-            <div><strong>Peter:</strong> Integrácia modulov IoT a webového backendu.</div>
-            <div><strong>Gabriel:</strong> Ladenie dátových modelov, doplnenie relácií.</div>
-            <div><strong>Roman:</strong> Prvá verzia dashboardu so základnými funkciami.</div>
-            <div><strong>Anton:</strong> Monitorovanie servera a logov, správa domény.</div>
-            <div><strong>Boris:</strong> Zlepšenie UX toku pre riešenie ticketov.</div>
-          </div>
-        </li>
-        <li>
-          <strong>9. Nov – 15. Nov</strong>
-          <div class="wk">
-            <div><strong>Peter:</strong> Analýza výkonu a úprava architektúry pre stabilitu.</div>
-            <div><strong>Gabriel:</strong> Testovanie integrácie s API a refaktor DB vrstvy.</div>
-            <div><strong>Roman:</strong> Rozšírenie testov a oprava chýb z prvej revízie.</div>
-            <div><strong>Anton:</strong> Zálohovanie systému a nastavenie alertov.</div>
-            <div><strong>Boris:</strong> Doplnenie vizuálnych prvkov pre správu úloh.</div>
-          </div>
-        </li>
-      </ul>
+  <li>
+    <strong>12. Oct – 18. Oct</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Kick-off meeting, definovanie vízie, rozdelenie rolí, koordinácia motivačného listu a predstavenia tímu.</div>
+      <div><strong>Roman:</strong> Vytvorenie projektovej webstránky (kostra), sekcie tím, motivačný list, nahratie na hosting.</div>
+      <div><strong>Anton:</strong> Príprava hostingu a prostredia pre projektovú stránku a budúcu aplikáciu.</div>
+      <div><strong>Boris:</strong> Úvodný návrh vizuálnej identity, moodboard a UX nápady pre helpdesk.</div>
+      <div><strong>Gabriel:</strong> Úvodný návrh dátového modelu a diskusia o štruktúre databázy.</div>
     </div>
-    <p style="color:#6b7a99;margin-top:.75rem">Pozn.: ďalšie týždne budú doplnené priebežne po kontrole pokroku.</p>
+  </li>
+
+  <li>
+    <strong>19. Oct – 25. Oct</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Návrh modulov systému (tickets, users, statusy) a prvý návrh API endpointov.</div>
+      <div><strong>Boris:</strong> UX flow pre základné scenáre (vytvorenie, zobrazenie a správa ticketov), tvorba prvých wireframov.</div>
+      <div><strong>Gabriel:</strong> Detailnejší ER diagram a návrh databázovej schémy.</div>
+      <div><strong>Anton:</strong> Vytvorenie základného backend projektu a API skeleton.</div>
+      <div><strong>Roman:</strong> Rozšírenie projektovej stránky o harmonogram a dokumentáciu.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>26. Oct – 1. Nov</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Spolupráca na definovaní dátových modelov a rozdelenie ďalších vývojových úloh.</div>
+      <div><strong>Boris:</strong> UI prototyp hlavného dashboardu v Figma a iterácia podľa feedbacku tímu.</div>
+      <div><strong>Gabriel:</strong> Implementácia databázy (MySQL/PostgreSQL) a napojenie na backend.</div>
+      <div><strong>Anton:</strong> Implementácia prvých API endpointov (login, zoznam ticketov, detail ticketu).</div>
+      <div><strong>Roman:</strong> Začiatok tvorby aplikačnej stránky – predstavenie aplikácie AlfaDesk.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>2. Nov – 8. Nov</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Kontrola prvého funkčného prepojenia backendu a databázy, nastavenie priorít pre prvú verziu.</div>
+      <div><strong>Boris:</strong> Návrh a doladenie formulárov pre vytvorenie a úpravu ticketu.</div>
+      <div><strong>Gabriel:</strong> Testovanie spojenia API ↔ DB, úpravy dotazov a dátových typov.</div>
+      <div><strong>Anton:</strong> Nasadenie backendu na server (staging prostredie), príprava Docker konfigurácie.</div>
+      <div><strong>Roman:</strong> Rozšírenie aplikačnej stránky o sekciu „Funkcionalita“ a priestor pre budúce demo.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>9. Nov – 15. Nov</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Zavedenie Git/GitHub workflow na riadenie a zdieľanie kódu (branchovanie, PR, úlohy), koordinácia integrácie frontend–backend.</div>
+      <div><strong>Boris:</strong> Finalizácia základného vzhľadu dashboardu a obrazovky ticketu podľa možností implementácie.</div>
+      <div><strong>Gabriel:</strong> Refaktor databázovej štruktúry podľa výsledkov testovania, doplnenie indexov.</div>
+      <div><strong>Anton:</strong> Rozšírenie API o filtrovanie, zmenu statusov a komentáre, príprava CI pipeline.</div>
+      <div><strong>Roman:</strong> Začiatok systematického testovania prvých funkcií (vytváranie a zobrazenie ticketov), report chýb.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>16. Nov – 22. Nov</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Revizia plánu do prezentácie 20. 12., stanovenie must-have funkcií a rozdelenie úloh.</div>
+      <div><strong>Boris:</strong> Doladenie responzívneho UI a UX pre hlavné obrazovky.</div>
+      <div><strong>Gabriel:</strong> Finalizácia DB schémy pre verziu na prezentáciu, príprava testovacích dát.</div>
+      <div><strong>Anton:</strong> Stabilizácia backendu, logovanie chýb a základný monitoring.</div>
+      <div><strong>Roman:</strong> Príprava a spustenie testovacích scenárov pre API a UI, zapisovanie chýb do Git-u.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>23. Nov – 29. Nov</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Spolupráca na návrhu scenára živého dema a prezentácie architektúry.</div>
+      <div><strong>Boris:</strong> Doplnenie UX detailov (stavy, chybové hlášky, loader) pre kľúčové funkcie.</div>
+      <div><strong>Gabriel:</strong> Kontrola dátovej integrity pri hlavných scenároch, úpravy constraintov.</div>
+      <div><strong>Anton:</strong> Príprava skriptov na rýchle nasadenie prezentovanej verzie a zálohovanie.</div>
+      <div><strong>Roman:</strong> Retest opravených chýb a kontrola end-to-end scenárov.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>30. Nov – 6. Dec</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Kontrola stavu kľúčových funkcií a definovanie finálneho rozsahu na prezentáciu.</div>
+      <div><strong>Boris:</strong> Polishing UI – farebná konzistencia, ikonky a vizuálne detaily.</div>
+      <div><strong>Gabriel:</strong> Ladenie výkonu SQL dotazov (paginácia, filtrovanie).</div>
+      <div><strong>Anton:</strong> Optimalizácia odozvy API a riešenie prípadných problémov s hostingom.</div>
+      <div><strong>Roman:</strong> Príprava sekcie na projektovom webe s odkazom na demo a dokumentáciu.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>7. Dec – 13. Dec</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Nácvik prezentácie – rozdelenie rolí, čo kto ukazuje a vysvetľuje.</div>
+      <div><strong>Boris:</strong> Úpravy UI podľa posledného feedbacku z testovania a nácviku prezentácie.</div>
+      <div><strong>Gabriel:</strong> Príprava ukážkových dát pre demo (typické tickety, stavy, kategórie).</div>
+      <div><strong>Anton:</strong> Príprava „freeze“ verzie aplikácie (tag v Git-e, finálny deploy).</div>
+      <div><strong>Roman:</strong> Kompletné regresné testovanie a final bug report.</div>
+    </div>
+  </li>
+
+  <li>
+    <strong>14. Dec – 20. Dec</strong>
+    <div class="wk">
+      <div><strong>Peter:</strong> Finalizácia prezentácie (slidy, príbeh, časovanie), komunikácia s vyučujúcimi.</div>
+      <div><strong>Boris:</strong> Príprava screenshotov a vizuálnych podkladov do prezentácie.</div>
+      <div><strong>Gabriel:</strong> Posledná kontrola databázy a pripravených skriptov (reset, inicializácia dát).</div>
+      <div><strong>Anton:</strong> Monitoring behu aplikácie počas prezentácie, pripravené záložné riešenie.</div>
+      <div><strong>Roman:</strong> Kontrola všetkých odkazov na webovej stránke (demo, PDF, prezentácie) a podpora počas prezentácie.</div>
+    </div>
+  </li>
+</ul>
+
+    </div>
+
+    <p class="note-muted">Ďalšie týždne budú doplnené priebežne.</p>
   </section>
 
   <section class="container">
-    <h2>Zápisnica z 1. stretnutia (12. október 2025)</h2>
-    <div class="card" style="padding:1rem">
-      <p><strong>Téma:</strong> Úvodné stretnutie k projektu ALFADESK</p>
+    <h2>Zápisnica z 1. stretnutia</h2>
+
+    <div class="card card-padding">
+      <p><strong>Dátum:</strong> 12. október 2025</p>
       <p><strong>Účastníci:</strong> Peter, Gabriel, Roman, Anton, Boris</p>
+
       <p><strong>Obsah:</strong></p>
       <ul>
-        <li>Predstavenie vízie projektu a cieľov (Peter)</li>
-        <li>Návrh architektúry a rozdelenie kompetencií</li>
-        <li>Definovanie prvých úloh a komunikačných kanálov</li>
+        <li>Predstavenie cieľov projektu</li>
+        <li>Návrh architektúry systému</li>
+        <li>Rolenie úloh a komunikácia</li>
       </ul>
+
       <p><strong>Rozdelenie úloh:</strong></p>
       <ul>
-        <li>Peter – koordinácia projektu, backend, IoT integrácie</li>
-        <li>Gabriel – databázy, dátové modely</li>
-        <li>Roman – testovanie, správa webu</li>
-        <li>Anton – hosting, CI/CD, infraštruktúra</li>
-        <li>Boris – UI/UX, dizajn a konzistencia</li>
+        <li>Peter – koordinácia, backend, IoT</li>
+        <li>Gabriel – databázy</li>
+        <li>Roman – testovanie + web</li>
+        <li>Anton – hosting, DevOps</li>
+        <li>Boris – UX/UI</li>
       </ul>
     </div>
   </section>
 
   <section class="container">
     <h2>Projektová dokumentácia (PDF)</h2>
-    <div class="card" style="padding:1rem">
-      <object data="docs/projekt.pdf" type="application/pdf" style="width:100%;height:70vh;border:1px solid #d6def7;border-radius:12px;background:#fff">
-        <iframe src="docs/projekt.pdf" style="width:100%;height:70vh;border:0"></iframe>
+
+    <div class="card card-padding">
+      <object data="docs/projekt.pdf" type="application/pdf" class="pdf-frame">
+        <iframe src="docs/projekt.pdf" class="pdf-iframe"></iframe>
       </object>
-      <p style="color:#5b6c8f;margin-top:.5rem">Ak sa PDF nezobrazí, skontroluj, že súbor je uložený na ceste <code>docs/projekt.pdf</code>.</p>
+      <p class="text-muted">Ak sa PDF nezobrazí, skontrolujte súbor v priečinku <code>docs/</code>.</p>
     </div>
+
+    <h2 style="margin-top:2rem;">Tímová prezentácia (osobné predstavenie členov)</h2>
+
+    <div class="card card-padding">
+      <object data="docs/Timova_prezentacia.pdf" type="application/pdf" class="pdf-frame">
+        <iframe src="docs/Timova_prezentacia.pdf" class="pdf-iframe"></iframe>
+      </object>
+
+      <p class="text-muted">
+        Osobná prezentácia každého člena tímu v jednom dokumente.
+        <a href="docs/Timova_prezentacia.pdf" target="_blank">Otvoriť v novom okne</a>
+      </p>
+    </div>
+
   </section>
 
   <footer>
     <div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div>
   </footer>
+
 </body>
 </html>

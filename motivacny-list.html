@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Motivačný list – Peter</title>
   <link rel="stylesheet" href="style/style.css">
-  <style>.pdf-embed{width:100%;height:85vh;border:1px solid #d6def7;border-radius:12px;background:#fff}</style>
 </head>
+
 <body>
+
   <div class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="index.html#home">
         <img src="images/logo.png" alt="ALFASYSTEMS logo">
-        <h1>ALFASYSTEMS <span style="opacity:.85;font-weight:500">— ALFADESK Fix IT</span></h1>
+        <h1>ALFASYSTEMS <span class="brand-subtitle">— ALFADESK Fix IT</span></h1>
       </a>
+
       <nav class="nav">
         <a href="motivacny-list.html">Motivačný list</a>
         <a href="projects.html">Projekty</a>
@@ -23,22 +26,35 @@
       </nav>
     </div>
   </div>
+
   <header class="banner">
     <div class="banner-inner">
       <div class="banner-logo">
         <img src="images/logo.png" alt="ALFASYSTEMS logo">
       </div>
+
       <div class="banner-copy">
         <h2>Motivačný list – Peter</h2>
-        <p class="lead">PDF je vložené nižšie. Ak sa nezobrazí, uložte ho do <code>docs/motivacny-list.pdf</code>.</p>
+        <p class="lead">
+          PDF je vložené nižšie. Ak sa nezobrazí, uložte ho do
+          <code>docs/motivacny-list.pdf</code>.
+        </p>
       </div>
     </div>
   </header>
+
   <section class="container">
-    <object class="pdf-embed" data="docs/motivacny-list.pdf" type="application/pdf">
-      <iframe class="pdf-embed" src="docs/motivacny-list.pdf"></iframe>
+    <h2>Motivačný list (PDF)</h2>
+
+    <object class="pdf-frame" data="docs/motivacny-list.pdf" type="application/pdf">
+      <iframe class="pdf-iframe" src="docs/motivacny-list.pdf"></iframe>
     </object>
   </section>
-  <footer><div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div></footer>
+
+  <footer>
+    <div class="copyright">© 2025 ALFASYSTEMS – tím ALFADESK</div>
+  </footer>
+
 </body>
+
 </html>
